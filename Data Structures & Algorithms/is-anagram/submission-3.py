@@ -19,7 +19,8 @@ class Solution:
         countS, countT = {}, {}
 
         for i in range(len(s)):
-            countS[s[i]] = 1 + countS.get(s[i], 0) # 1 + o valor se encontrar se nao é 0
+            countS[s[i]] = 1 + countS.get(s[i], 0)  # "Busque o valor da chave 'r'. Se não achar, me dê 0"
+
             countT[t[i]] = 1 + countT.get(t[i], 0)
         
         return countS == countT
